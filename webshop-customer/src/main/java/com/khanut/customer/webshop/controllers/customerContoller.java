@@ -18,7 +18,6 @@ public class customerContoller {
 	//@CrossOrigin(origins = "http://localhost:4200")
 	@PostMapping("/register")
 	ResponseEntity<Void> createNewCustomer(@RequestBody Customer newCustomer) {
-		System.out.println("Called end point");
 		customerService.createNewCustomer(newCustomer);
 		
 		return ResponseEntity.ok(null);
