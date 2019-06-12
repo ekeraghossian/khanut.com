@@ -34,5 +34,17 @@ public class CustomerInit {
 		roleService.saveRole(role);
 		customer.setRole(roles);
 		loginService.saveUser(customer);
+		
+		System.out.println("Initialaizing supplier 1");
+		Customer supplier = new Customer();
+		supplier.setEmail("eskandar@hotmail.com");
+		supplier.setPassword("mypass");
+		Role role2 = new Role();
+		role2.setRole("supplier");
+		Set<Role> roles2 = new HashSet<>();
+		roles2.add(role2);
+		roleService.saveRole(role2);
+		supplier.setRole(roles2);
+		loginService.saveUser(supplier);
 	}
 }
