@@ -19,6 +19,6 @@ public class SubCategoryController {
 	@CrossOrigin("*")
 	@RequestMapping("/subcategoriesId")
 	List<SubCategory> getSubcategoriesByCatId(@RequestParam("id") String id) {
-		return subCategoryRepository.findAll();
+		return subCategoryRepository.findByCatId(id);
 	}
 }
