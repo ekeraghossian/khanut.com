@@ -46,8 +46,8 @@ public class DataInit {
 		subCategoryRepository.save(thrillBooks);
 		
 		Product porduct1 = new Product("Samsung smart 4000", electronics, tv, "./assets/2.jpg");
-		Product porduct2 = new Product("Fire and ice", books, thrillBooks, "./assets/1.jpg");
-		Product porduct3 = new Product("Sony Bravia 40", electronics, tv, "./assets/2.jpg");
+		Product porduct2 = new Product("Fire and ice", books, thrillBooks, "./assets/fireandice.jpg");
+		Product porduct3 = new Product("Sony Bravia 40", electronics, tv, "./assets/sony.jpg");
 		
 		productRepository.save(porduct1);
 		productRepository.save(porduct2);

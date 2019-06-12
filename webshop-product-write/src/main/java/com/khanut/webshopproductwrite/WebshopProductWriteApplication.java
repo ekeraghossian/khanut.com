@@ -8,12 +8,13 @@ import org.springframework.jms.annotation.EnableJms;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableJpaRepositories
+//@EnableJpaRepositories
 @EnableJms
 public class WebshopProductWriteApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebshopProductWriteApplication.class, args);
 	}
+	
 
 }
